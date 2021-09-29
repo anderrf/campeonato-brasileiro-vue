@@ -10,7 +10,7 @@
 
 <script>
     export default {
-    name: 'Inicio'
+        name: 'Inicio'
     }
 </script>
 
