@@ -2,19 +2,17 @@
   <v-app>
     <v-main>
       <AppToolBar/>
-      <Inicio/>
+      <router-view/>
     </v-main>
   </v-app>
 </template>
 
 <script>
   import AppToolBar from './components/shared/AppToolBar';
-  import Inicio from './components/Inicio';
   export default {
     name: 'App',
     components: {
-      AppToolBar,
-      Inicio
+      AppToolBar
     }
   }
 </script>
