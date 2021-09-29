@@ -1,14 +1,13 @@
 <template>
   <v-app>
     <v-main>
-      <v-app-bar app color="green" dark>
+      <v-app-bar app color="red" dark>
         <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon>
         <v-toolbar-title>⚽ Campeonato Brasileiro ⚽</v-toolbar-title>
       </v-app-bar>
       <v-navigation-drawer v-model="drawer" absolute temporary>
         <v-list nav dense>
-          <v-list-item-group v-model="group" active-class="green--text text--lighten-2">
-      
+          <v-list-item-group v-model="group" active-class="red--text text--lighten-2">
             <v-list-item>
               <v-list-item-icon>
                 <v-icon>mdi-soccer</v-icon>
@@ -24,23 +23,27 @@
           </v-list-item-group>
         </v-list>
       </v-navigation-drawer>
+      <Inicio/>
     </v-main>
   </v-app>
 </template>
 
 <script>
-
-export default {
-  name: 'App',
-
-  components: {
-  },
-
-  data() {
-    return {
-      drawer: false,
-      group: null,
+  import Inicio from './components/Inicio';
+  export default {
+    name: 'App',
+    components: {
+      Inicio
+    },
+    data() {
+      return {
+        drawer: false,
+        group: null,
+      }
     }
-  }
-};
+  };
 </script>
+
+<style>
+
+</style>
